@@ -29,3 +29,19 @@ var LS = {
 };
 
 window.addEventListener('load',LS.drawBackground,false);
+$(document).ready(function() {
+  $('#menu h3').click(function() {
+    if ($('#menu').css('left') == "-216px" || $('#menu').css('left') == "-13.5151em") {
+      $('#menu').animate({
+        left: '+=22.4em'
+      });
+    } else {
+      $('#menu').animate({
+        left: '-=22.4em'
+      });
+    };
+  });
+  $('li a').click(function() {
+    $('#menu').css('left','-13.5em');
+  });
+});

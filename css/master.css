@@ -22,6 +22,41 @@ h1 {
   text-align:center;
 }
 
+#menu {
+  font-family: 'HelveticaNeue', Helvetica, sans-serif;
+  position:fixed;
+  z-index: 30;
+  top: 4em;
+  left: -13.5em;
+  -webkit-transform: rotate(90deg);
+}
+
+#menu > h3 {
+  background-color: white;
+  color: red;
+  text-align:center;
+  padding:1em;
+  margin:0em;
+  -webkit-border-top-left-radius: 1em;
+  -webkit-border-top-right-radius: 1em;
+  -webkit-box-shadow: 2px 2px 4px #888888;
+}
+
+#menu > ul {
+  list-style-type: none;
+  margin-top:0;
+  background-color:#CCCCCC;
+  -webkit-box-shadow: 2px 2px 4px #888888;
+}
+
+#menu li {
+  margin-left: -1em;
+  padding: 1em 0 1em 0;
+  border-bottom:1px solid #BBBBBB;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(32,32,32);
+}
+
 #footer {
   position:fixed;
   z-index: 5;
@@ -34,4 +69,13 @@ h1 {
 
 #footer > p {
   text-size: 0.8em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color:red;
 }
