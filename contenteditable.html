@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>contenteditable="true"</title>
+    <link rel="stylesheet" href="css/ce.css" type="text/css" media="screen" charset="utf-8">
+    <script type="text/javascript" charset="utf-8">
+      var LS = {
+        load: function() {
+          try {
+            var listItems = localStorage.getItem("notes");
+            var noteList = document.getElementById("noteList");
+            if (listItems) {
+              noteList.innerHTML = listItems;
+            };
+            noteList.addEventListener('blur', LS.save, false);
+          } catch (e) {
+            alert(e);
+          }
+        },
+        save: function() {
+          localStorage.setItem("notes", this.innerHTML);
+          document.designMode = 'off';
+        }
+      };
+      window.addEventListener('load', LS.load, false);
+    </script>
+  </head>
+  <body>
+    <h2>To-Do List</h2>
+    <ul id="noteList" contenteditable="true">
+      <li>Next Action</li>
+    </ul>
+  </body>
+</html>
