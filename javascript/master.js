@@ -25,10 +25,14 @@ var LS = {
     var cent = paper.circle($(window).width()/2,$(window).height(),200);
     cent.attr('fill', "rgb(153, 204, 255)");
     cent.attr('stroke','rgb(153, 204, 255)');
+    
+  },
+  load: function() {
+    LS.drawBackground();
   }
 };
 
-window.addEventListener('load',LS.drawBackground,false);
+window.addEventListener('load',LS.load,false);
 $(document).ready(function() {
   $('#menu h3').click(function() {
     if ($('#menu').css('left') == "-216px" || $('#menu').css('left') == "-13.5151em") {
