@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Adventures in Programming]]></title>
   <link href="http://statonjr.github.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://statonjr.github.com/"/>
-  <updated>2012-03-16T14:17:43-04:00</updated>
+  <updated>2012-03-16T15:15:54-04:00</updated>
   <id>http://statonjr.github.com/</id>
   <author>
     <name><![CDATA[Larry Staton Jr.]]></name>
@@ -18,9 +18,7 @@
     <link href="http://statonjr.github.com/blog/2012/03/15/hello-world/"/>
     <updated>2012-03-15T19:49:00-04:00</updated>
     <id>http://statonjr.github.com/blog/2012/03/15/hello-world</id>
-    <content type="html"><![CDATA[<h1>Hello, world</h1>
-
-<p>I write code. I leared to write code at age 10; I wrote BASIC on an Apple IIe. I then moved on to AppleScript, a language that I still use today to boss Mac apps around. At my current job, I write mostly Ruby code, building APIs and other tools for teams inside a large financial institution. While I currently deploy on MRI, I am a big fan of JRuby and I plan to port most of my APIs over to JRuby, so expect several posts on deploying JRuby.</p>
+    <content type="html"><![CDATA[<p>I write code. I leared to write code at age 10; I wrote BASIC on an Apple IIe. I then moved on to AppleScript, a language that I still use today to boss Mac apps around. At my current job, I write mostly Ruby code, building APIs and other tools for teams inside a large financial institution. While I currently deploy on MRI, I am a big fan of JRuby and I plan to port most of my APIs over to JRuby, so expect several posts on deploying JRuby.</p>
 
 <p>I also write Cocoa and iOS applications for fun and profit. While I write my iOS applications in Objective-C, I write my Cocoa apps with MacRuby. With MacRuby, I get full access to AppKit and Foundation from Ruby, even on the command line, not to mention the ability to create great interfaces in Xcode.</p>
 
