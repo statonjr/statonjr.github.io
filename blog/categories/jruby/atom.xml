@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jruby | Adventures in Programming]]></title>
   <link href="http://statonjr.github.com/blog/categories/jruby/atom.xml" rel="self"/>
   <link href="http://statonjr.github.com/"/>
-  <updated>2012-03-15T21:13:11-04:00</updated>
+  <updated>2012-03-16T11:49:04-04:00</updated>
   <id>http://statonjr.github.com/</id>
   <author>
     <name><![CDATA[Larry Staton Jr.]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[12-factor-app]]></title>
+    <link href="http://statonjr.github.com/blog/2012/03/16/12-factor-app/"/>
+    <updated>2012-03-16T11:41:00-04:00</updated>
+    <id>http://statonjr.github.com/blog/2012/03/16/12-factor-app</id>
+    <content type="html"><![CDATA[<p>Richard Schneeman from Heroku will be presenting the <a href="http://www.12factor.net">12 Factor App</a> at the charlotte.rb meeting next Wednesday night at Packard Place. I read through the website and I'm interested to see how the 12 Factor App compares to how I've architected some of my systems. I've already found a few changes that I should make. I'm also interested to see how the 12 Factor App differs from an environment like <a href="http://www.torquebox.com">Torquebox</a>, which handles many of these factors for you.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
