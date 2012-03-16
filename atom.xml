@@ -4,7 +4,7 @@
   <title><![CDATA[Adventures in Programming]]></title>
   <link href="http://statonjr.github.com/atom.xml" rel="self"/>
   <link href="http://statonjr.github.com/"/>
-  <updated>2012-03-16T11:49:04-04:00</updated>
+  <updated>2012-03-16T14:17:43-04:00</updated>
   <id>http://statonjr.github.com/</id>
   <author>
     <name><![CDATA[Larry Staton Jr.]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[objective-c-literals]]></title>
+    <link href="http://statonjr.github.com/blog/2012/03/16/objective-c-literals/"/>
+    <updated>2012-03-16T14:09:00-04:00</updated>
+    <id>http://statonjr.github.com/blog/2012/03/16/objective-c-literals</id>
+    <content type="html"><![CDATA[<p>Mark Dalrymple <a href="http://weblog.bignerdranch.com/?p=398">posts</a> about the new literal syntax in Objective-C. One reason that I prefer MacRuby is Ruby&#8217;s terse syntax for creating literals. With MacRuby, I can create dictionaries the standard Ruby way:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">dict</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">:foo</span> <span class="o">=&gt;</span> <span class="s2">&quot;bar&quot;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The new literals make creating Objective-C dictionaries (and arrays) easier, but not quite as easy as Ruby:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">splunge</span> <span class="o">=</span> <span class="err">@</span><span class="p">{</span> <span class="s">@&quot;hi&quot;</span> <span class="o">:</span>  <span class="s">@&quot;bork&quot;</span><span class="p">,</span> <span class="s">@&quot;greeble&quot;</span> <span class="o">:</span>  <span class="s">@&quot;bork&quot;</span> <span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Not bad and, at first glance, better than the old <code>NSDictionary dictionaryWithObjectsAndKeys:</code>. Check out Mark&#8217;s post for more.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[12-factor-app]]></title>

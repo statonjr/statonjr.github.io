@@ -4,7 +4,7 @@
   <title><![CDATA[Category: objective-c | Adventures in Programming]]></title>
   <link href="http://statonjr.github.com/blog/categories/objective-c/atom.xml" rel="self"/>
   <link href="http://statonjr.github.com/"/>
-  <updated>2012-03-16T11:49:04-04:00</updated>
+  <updated>2012-03-16T14:17:43-04:00</updated>
   <id>http://statonjr.github.com/</id>
   <author>
     <name><![CDATA[Larry Staton Jr.]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[objective-c-literals]]></title>
+    <link href="http://statonjr.github.com/blog/2012/03/16/objective-c-literals/"/>
+    <updated>2012-03-16T14:09:00-04:00</updated>
+    <id>http://statonjr.github.com/blog/2012/03/16/objective-c-literals</id>
+    <content type="html"><![CDATA[<p>Mark Dalrymple <a href="http://weblog.bignerdranch.com/?p=398">posts</a> about the new literal syntax in Objective-C. One reason that I prefer MacRuby is Ruby's terse syntax for creating literals. With MacRuby, I can create dictionaries the standard Ruby way:</p>
+
+<p><code>ruby
+dict = { :foo =&gt; "bar" }
+</code></p>
+
+<p>The new literals make creating Objective-C dictionaries (and arrays) easier, but not quite as easy as Ruby:</p>
+
+<p><code>objective-c
+NSDictionary *splunge = @{ @"hi" :  @"bork", @"greeble" :  @"bork" };
+</code></p>
+
+<p>Not bad and, at first glance, better than the old <code>NSDictionary dictionaryWithObjectsAndKeys:</code>. Check out Mark's post for more.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>
