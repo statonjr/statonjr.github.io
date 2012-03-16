@@ -1,0 +1,8 @@
+---
+layout: post
+title: "12-factor-app"
+date: 2012-03-16 11:41
+comments: true
+categories: [ruby,jruby,torquebox]
+---
+Richard Schneeman from Heroku will be presenting the [12 Factor App](http://www.12factor.net) at the charlotte.rb meeting next Wednesday night at Packard Place. I read through the website and I'm interested to see how the 12 Factor App compares to how I've architected some of my systems. I've already found a few changes that I should make. I'm also interested to see how the 12 Factor App differs from an environment like [Torquebox](http://www.torquebox.com), which handles many of these factors for you.
