@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ibooks | Adventures in Programming]]></title>
+  <link href="http://statonjr.github.com/blog/categories/ibooks/atom.xml" rel="self"/>
+  <link href="http://statonjr.github.com/"/>
+  <updated>2012-03-18T19:54:39-04:00</updated>
+  <id>http://statonjr.github.com/</id>
+  <author>
+    <name><![CDATA[Larry Staton Jr.]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[first-ibook]]></title>
+    <link href="http://statonjr.github.com/blog/2012/03/18/first-ibook/"/>
+    <updated>2012-03-18T19:32:00-04:00</updated>
+    <id>http://statonjr.github.com/blog/2012/03/18/first-ibook</id>
+    <content type="html"><![CDATA[<p>I created my <a href="http://dl.dropbox.com/u/984383/Exploring%20Evaporation.ibooks">first iBook</a> today for my son's third grade science fair project. I didn't do anything fancy in iBooks Author; no widgets, for example. I added several photos and one movie that I shot on my iPhone 4 and edited in iMovie. My son and I also created voiceovers for the clips. He really enjoyed the moviemaking.</p>
+
+<p>Using iBooks Author offered few surprises for those who have used Pages or iWeb. The interface elements and inspectors should be very familiar. I had no trouble getting up and running immediately. Adding media is a simple drag-and-drop operation. I like how iBooks Author lets you control whether or not movies must show in full-screen mode. In my case, the movie just played better in full screen.</p>
+
+<p>iBooks Author also provides several export options, including to the iBooks format as in the link above. Apple provides this option for those who want to distribute their iBook outside of the iBooks store. I did not submit the iBook to Apple, but the process looks simple. I also printed the iBook and the output looked just like the book.</p>
+
+<p>Overall, I'm satisfied with iBooks Author, but I'm most excited about my son presenting his work tomorrow.</p>
+]]></content>
+  </entry>
+  
+</feed>

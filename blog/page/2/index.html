@@ -9,7 +9,7 @@
   <meta name="author" content="Larry Staton Jr.">
 
   
-  <meta name="description" content="Richard Schneeman from Heroku will be presenting the 12 Factor App at the charlotte.rb meeting next Wednesday night at Packard Place. I read through &hellip;">
+  <meta name="description" content="Mark Dalrymple posts about the new literal syntax in Objective-C. One reason that I prefer MacRuby is Ruby&#8217;s terse syntax for creating literals &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +71,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/03/16/12-factor-app/">12-factor-app</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/03/16/objective-c-literals/">Objective-c-literals</a></h1>
     
     
       <p class="meta">
@@ -87,14 +87,28 @@
   
 
 
-<time datetime="2012-03-16T11:41:00-04:00" pubdate data-updated="true">2012-03-16</time>
+<time datetime="2012-03-16T14:09:00-04:00" pubdate data-updated="true">2012-03-16</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Richard Schneeman from Heroku will be presenting the <a href="http://www.12factor.net">12 Factor App</a> at the charlotte.rb meeting next Wednesday night at Packard Place. I read through the website and I&#8217;m interested to see how the 12 Factor App compares to how I&#8217;ve architected some of my systems. I&#8217;ve already found a few changes that I should make. I&#8217;m also interested to see how the 12 Factor App differs from an environment like <a href="http://www.torquebox.com">Torquebox</a>, which handles many of these factors for you.</p>
+  <div class="entry-content"><p>Mark Dalrymple <a href="http://weblog.bignerdranch.com/?p=398">posts</a> about the new literal syntax in Objective-C. One reason that I prefer MacRuby is Ruby&#8217;s terse syntax for creating literals. With MacRuby, I can create dictionaries the standard Ruby way:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">dict</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">:foo</span> <span class="o">=&gt;</span> <span class="s2">&quot;bar&quot;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The new literals make creating Objective-C dictionaries (and arrays) easier, but not quite as easy as Ruby:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='objective-c'><span class='line'><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">splunge</span> <span class="o">=</span> <span class="err">@</span><span class="p">{</span> <span class="s">@&quot;hi&quot;</span> <span class="o">:</span>  <span class="s">@&quot;bork&quot;</span><span class="p">,</span> <span class="s">@&quot;greeble&quot;</span> <span class="o">:</span>  <span class="s">@&quot;bork&quot;</span> <span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Not bad and, at first glance, better than the old <code>NSDictionary dictionaryWithObjectsAndKeys:</code>. Check out Mark&#8217;s post for more.</p>
 </div>
   
   
@@ -117,6 +131,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/03/18/first-ibook/">first-ibook</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/03/16/objective-c-literals/">objective-c-literals</a>
