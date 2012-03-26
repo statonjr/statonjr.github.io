@@ -4,7 +4,7 @@
   <title><![CDATA[Category: applescript | Adventures in Programming]]></title>
   <link href="http://statonjr.github.com/blog/categories/applescript/atom.xml" rel="self"/>
   <link href="http://statonjr.github.com/"/>
-  <updated>2012-03-22T05:46:56-04:00</updated>
+  <updated>2012-03-25T20:22:05-04:00</updated>
   <id>http://statonjr.github.com/</id>
   <author>
     <name><![CDATA[Larry Staton Jr.]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AppleScript and JSON]]></title>
+    <link href="http://statonjr.github.com/blog/2012/03/25/applescript-and-json/"/>
+    <updated>2012-03-25T20:03:00-04:00</updated>
+    <id>http://statonjr.github.com/blog/2012/03/25/applescript-and-json</id>
+    <content type="html"><![CDATA[<p>AppleScript is great for bossing around applications on your Mac. Yes, the syntax is wonky and third parties (and Apple!) often botch their dictionaries, but AppleScript is still a very capable language. Except when it comes to text. AppleScript just cannot deal with text well. This weekend, when I wasn't bombing around the <a href="http://www.bmwusa.com/standard/content/experience/events/pds/default.aspx">BMW Performance Center</a>, I tried to fetch and parse JSON from a web service with AppleScript. Sadly, AppleScript doesn't understand JSON and, because JSON is text, AppleScript doesn't deal with it well.</p>
+
+<p>I tried using <code>jsontool</code> via node, but AppleScript didn't want to find and load node. I also looked at <a href="http://code.google.com/p/json-helper/">AppleScript JSON Helper</a>, but I try to require my users to download additional software if I can help it. My solution: shell out to Ruby using <code>do shell script</code>. Ruby's JSON library is top-notch and makes dealing with JSON a breeze. Here's a sample:</p>
+
+<p><code>applescript
+set name to do shell script "ruby -e 'require \"rubygems\";require \"json\";j='{"Name":"John Doe"}';data=JSON.parse(j);puts data[\"Name\"]'"
+</code></p>
+
+<p>There's a few things to watch out for here. First, even if you're using rbenv or RVM, <code>do shell script</code> uses the system Ruby library, which is version 1.8.7, which means that you'll need to <code>require "rubygems"</code> before you load the JSON library. Next, you need to escape the quotes in the <code>require</code>d libraries. Finally, you need to <code>puts</code> the output that you want, so that AppleScript can pick it up.</p>
+
+<p>Once you have the data, you're off! Happy AppleScripting!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hello world]]></title>

@@ -9,7 +9,7 @@
   <meta name="author" content="Larry Staton Jr.">
 
   
-  <meta name="description" content="I bought Land of Lisp a year ago when it first came out. I read through the book and did a few examples, but never gave it my full attention. I think &hellip;">
+  <meta name="description" content="AppleScript is great for bossing around applications on your Mac. Yes, the syntax is wonky and third parties (and Apple!) often botch their &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +71,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/03/22/land-of-lisp/">Land of LISP</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/03/25/applescript-and-json/">AppleScript and JSON</a></h1>
     
     
       <p class="meta">
@@ -87,14 +87,25 @@
   
 
 
-<time datetime="2012-03-22T05:41:00-04:00" pubdate data-updated="true">2012-03-22</time>
+<time datetime="2012-03-25T20:03:00-04:00" pubdate data-updated="true">2012-03-25</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>I bought <em>Land of Lisp</em> a year ago when it first came out. I read through the book and did a few examples, but never gave it my full attention. I think the chapter on macros made my head spin a bit and then I got sidetracked. While waiting at the airport this week, I decided to take another look, but this time with my full attention. By &#8220;full attention&#8221;, I mean completing the examples and <em>learning</em> how LISP works. I&#8217;ll blog my notes, too. Look for a blog post soon about getting set up.</p>
+  <div class="entry-content"><p>AppleScript is great for bossing around applications on your Mac. Yes, the syntax is wonky and third parties (and Apple!) often botch their dictionaries, but AppleScript is still a very capable language. Except when it comes to text. AppleScript just cannot deal with text well. This weekend, when I wasn&#8217;t bombing around the <a href="http://www.bmwusa.com/standard/content/experience/events/pds/default.aspx">BMW Performance Center</a>, I tried to fetch and parse JSON from a web service with AppleScript. Sadly, AppleScript doesn&#8217;t understand JSON and, because JSON is text, AppleScript doesn&#8217;t deal with it well.</p>
+
+<p>I tried using <code>jsontool</code> via node, but AppleScript didn&#8217;t want to find and load node. I also looked at <a href="http://code.google.com/p/json-helper/">AppleScript JSON Helper</a>, but I try to require my users to download additional software if I can help it. My solution: shell out to Ruby using <code>do shell script</code>. Ruby&#8217;s JSON library is top-notch and makes dealing with JSON a breeze. Here&#8217;s a sample:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='applescript'><span class='line'><span class="k">set</span> <span class="na">name</span> <span class="k">to</span> <span class="nb">do shell script</span> <span class="s2">&quot;ruby -e &#39;require \&quot;rubygems\&quot;;require \&quot;json\&quot;;j=&#39;{&quot;</span><span class="nv">Name</span><span class="s2">&quot;:&quot;</span><span class="nv">John</span> <span class="nv">Doe</span><span class="s2">&quot;}&#39;;data=JSON.parse(j);puts data[\&quot;Name\&quot;]&#39;&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There&#8217;s a few things to watch out for here. First, even if you&#8217;re using rbenv or RVM, <code>do shell script</code> uses the system Ruby library, which is version 1.8.7, which means that you&#8217;ll need to <code>require "rubygems"</code> before you load the JSON library. Next, you need to escape the quotes in the <code>require</code>d libraries. Finally, you need to <code>puts</code> the output that you want, so that AppleScript can pick it up.</p>
+
+<p>Once you have the data, you&#8217;re off! Happy AppleScripting!</p>
 </div>
   
   
@@ -117,6 +128,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/03/25/applescript-and-json/">AppleScript and JSON</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/03/22/land-of-lisp/">Land of LISP</a>
       </li>
     
@@ -130,10 +145,6 @@
     
       <li class="post">
         <a href="/blog/2012/03/16/12-factor-app/">12-factor-app</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/15/hello-world/">hello world</a>
       </li>
     
   </ul>
