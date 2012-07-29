@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: lisp | Adventures in Programming]]></title>
+  <link href="http://statonjr.github.com/blog/categories/lisp/atom.xml" rel="self"/>
+  <link href="http://statonjr.github.com/"/>
+  <updated>2012-03-25T20:22:05-04:00</updated>
+  <id>http://statonjr.github.com/</id>
+  <author>
+    <name><![CDATA[Larry Staton Jr.]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Land of LISP]]></title>
+    <link href="http://statonjr.github.com/blog/2012/03/22/land-of-lisp/"/>
+    <updated>2012-03-22T05:41:00-04:00</updated>
+    <id>http://statonjr.github.com/blog/2012/03/22/land-of-lisp</id>
+    <content type="html"><![CDATA[<p>I bought <em>Land of Lisp</em> a year ago when it first came out. I read through the book and did a few examples, but never gave it my full attention. I think the chapter on macros made my head spin a bit and then I got sidetracked. While waiting at the airport this week, I decided to take another look, but this time with my full attention. By "full attention", I mean completing the examples and <em>learning</em> how LISP works. I'll blog my notes, too. Look for a blog post soon about getting set up.</p>
+]]></content>
+  </entry>
+  
+</feed>
